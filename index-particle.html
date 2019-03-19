@@ -112,18 +112,18 @@ http://miradontsoa.com
       <nav class="navbar-mainmenu">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="./index.html#home">Home
+            <a class="nav-link" href="index.html#home">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./gallery.html">Who We Are</a>
+            <a class="nav-link" href="#about">Who We Are</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./item.html">What We Do</a>
+            <a class="nav-link" href="#services">What We Do</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./demo.html">How I.T. Works</a>
+            <a class="nav-link" href="#howItWorks">How I.T. Works</a>
           </li>
         </ul>
       </nav>
@@ -239,7 +239,7 @@ http://miradontsoa.com
           </div>
           <!-- Action button -->
           <div class="btns-action anim-3">
-            <a class="btn btn-outline-white btn-round" href="about-details.html">
+            <a class="btn btn-outline-white btn-round" href="what-we-do.html">
               Read More
             </a>
           </div>
@@ -387,7 +387,7 @@ http://miradontsoa.com
           </div>
           <!-- Action button -->
           <div class="btns-action anim-3">
-            <a class="btn btn-outline-white btn-round" href="services-details.html">
+            <a class="btn btn-outline-white btn-round" href="who-we-are.html">
               Read More
             </a>
           </div>
@@ -428,7 +428,7 @@ http://miradontsoa.com
           </div>
           <!-- Action button -->
           <div class="btns-action anim-3">
-            <a class="btn btn-outline-white btn-round" href="how-it-works-details.html">
+            <a class="btn btn-outline-white btn-round" href="how-it-works.html">
               Read More
             </a>
           </div>
@@ -466,18 +466,16 @@ http://miradontsoa.com
                 <!-- title and description -->
                 <div class="title-desc">
                   <div class="anim-2">
-                    <h5>Customer Service</h5>
+                    <!-- <h5>Customer Service</h5> -->
                     <h2 class="display-4 display-title">Contact</h2>
-                    <p>For questions about our company and products found on our stores.
-                      Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis
-                      dui. Fusce in urna sem.</p>
+                    <p>For questions about our company and products found on our stores.</p>
                   </div>
                   <div class="address-container anim-3">
 
                     <div class="row">
                       <div class="col-12 col-md-12 col-lg-6">
                         <h4>Contact</h4>
-                        <p>Call: <br>9130131131/9860781601</p>
+                        <p>Call: <br>9130131131 / 9860781601</p>
                         <p>Email: <br>vaibhav@technative.in</p>
                       </div>
                       <div class="col-12 col-md-12 col-lg-6">
@@ -547,8 +545,24 @@ http://miradontsoa.com
                 <div class="">
                   <div class="form-container form-container-card">
                     <!-- Message form container -->
-                    <form class="send_message_form message form" method="post" action="ajaxserver/serverfile.php"
-                    id="message_form">
+                    <!-- <form onSubmit="return submitForm();" action="/" method="post" name="contactform" class="send_message_form message form" id="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" name="name" value="" placeholder="name" required>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="email" name="email" value="" placeholder="email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <textarea name="message" placeholder="Your message" required></textarea>
+                                <input type="submit" value="send message" class="submit bg-second">
+                            </div>
+                        </div>
+                    </form> -->
+                    <form onSubmit="return submitForm();" action="/" method="post" class="send_message_form message form"
+                    name="contactform" id="contact-form">
                       <div class="form-group name">
                         <label for="mes-name">Name :</label>
                         <input id="mes-name" name="name" type="text" placeholder="" class="form-control-line form-success-clean"
@@ -630,6 +644,22 @@ http://miradontsoa.com
     </div>
   </footer>
   <!-- END OF site footer -->
+
+  <script>
+  function submitForm() {
+      $.ajax({
+          type: 'POST',
+          url: 'ajaxserver/email-action.php',
+          data: $('#contact-form').serialize(),
+          success: function(response) {
+              $('.submit').html('sent');
+              $('.success').html('Your message was sent successfully');
+              document.contactform.reset();
+          }
+      });
+      return false;
+  }
+  </script>
 
   <!-- scripts -->
   <!-- All Javascript plugins goes here -->
