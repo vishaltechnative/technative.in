@@ -1992,12 +1992,12 @@ textarea {
       left: 0; }
       @media (min-width: 768px) {
         .carousel-swiper-beta .items-button.items-button-prev.fit {
-          left: 25%; } }
+          left: 18%; } }
     .carousel-swiper-beta .items-button.items-button-next {
       right: 0; }
       @media (min-width: 768px) {
         .carousel-swiper-beta .items-button.items-button-next.fit {
-          right: 25%; } }
+          right: 18%; } }
     .carousel-swiper-beta .items-button.bottom {
       bottom: -20px;
       top: auto;
@@ -2130,12 +2130,12 @@ textarea {
       left: 0; }
       @media (min-width: 768px) {
         .carousel-swiper-gamma .items-button.items-button-prev.fit {
-          left: 25%; } }
+          left: 22%; } }
     .carousel-swiper-gamma .items-button.items-button-next {
       right: 0; }
       @media (min-width: 768px) {
         .carousel-swiper-gamma .items-button.items-button-next.fit {
-          right: 25%; } }
+          right: 22%; } }
     .carousel-swiper-gamma .items-button.bottom {
       bottom: -20px;
       top: auto;
