@@ -1,21 +1,21 @@
 a {
-  color: #f8204b; }
+  color: #3ec0cd; }
   a:hover {
-    color: rgba(248, 32, 75, 0.8); }
+    color: #000; }
 
 .page-header-alpha .navbar-mainmenu .nav-item a:hover {
-  color: #f8204b; }
+  color: #3ec0cd; }
 
 .btn-white {
   color: #ffffff;
   border: 1px solid transparent;
-  background-color: #f8204b; }
+  background-color: #3ec0cd; }
   .btn-white:hover {
     background-color: rgba(248, 32, 75, 0.8);
     color: #ffffff; }
 
 .btn-outline-primary {
-  color: #f8204b;
+  color: #3ec0cd;
   border-color: currentColor; }
 
 .btn-outline-primary:hover,

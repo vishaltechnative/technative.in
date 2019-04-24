@@ -1,11 +1,11 @@
 <?php //ob_start();
 if(isset($_REQUEST['event']) && $_REQUEST['event']!=''){$event=$_REQUEST['event'];}else{$event='';}
-define('SITE_EMAIL', 'pallavi.kelgaonkar11@gmail.com');
+define('SITE_EMAIL', 'admin@technative.in');
   console.log('in')
     /* recipients */
     $to1= SITE_EMAIL;
     /* subject */
-    $subject1 = "Selenite Enquiry";
+    $subject1 = "Technative Enquiry";
     /* message */
     $message1 = '<table width="100%" border="0" cellspacing="0" cellpadding="0">
 

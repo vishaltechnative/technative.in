@@ -4,7 +4,7 @@
 // init foundation
 // $(document).foundation();
 
-// Init all plugin when document is ready 
+// Init all plugin when document is ready
 $(document).on('ready', function () {
 	// 0. Init console to avoid error
 	var method;
@@ -27,7 +27,7 @@ $(document).on('ready', function () {
 		}
 	}
 
-	// 1. Background image as data attribut 
+	// 1. Background image as data attribut
 	var list = $('.bg-img');
 	for (var i = 0; i < list.length; i++) {
 		var src = list[i].getAttribute('data-image-src');
@@ -89,7 +89,7 @@ $(document).on('ready', function () {
 		loop: true,
 		grabCursor: true,
 		centeredSlides: true,
-		autoplay: 5000,
+		autoplay: 15000,
 		autoplayDisableOnInteraction: false,
 		slidesPerView: 1,
 		spaceBetween: 0,
@@ -124,7 +124,7 @@ $(document).on('ready', function () {
 		slides: imageSlides,
 		animation: ['kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight']
 	});
-	
+
 	// 5. Init video background
 	var videoBg = $('.video-container video, .video-container object');
 
@@ -286,4 +286,3 @@ $(document).on('ready', function () {
 
 
 });
-
