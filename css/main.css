@@ -1992,12 +1992,12 @@ textarea {
       left: 0; }
       @media (min-width: 768px) {
         .carousel-swiper-beta .items-button.items-button-prev.fit {
-          left: 18%; } }
+          left: 9%; } }
     .carousel-swiper-beta .items-button.items-button-next {
       right: 0; }
       @media (min-width: 768px) {
         .carousel-swiper-beta .items-button.items-button-next.fit {
-          right: 18%; } }
+          right: 9%; } }
     .carousel-swiper-beta .items-button.bottom {
       bottom: -20px;
       top: auto;
