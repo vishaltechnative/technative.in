@@ -1457,7 +1457,7 @@ textarea {
   .img-avatar-alpha:hover img {
     -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
             box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
-    border: 8px solid #ffffff; }
+    border: 8px solid #636363; }
   .img-avatar-alpha .legend {
     margin-top: 0px; }
 
