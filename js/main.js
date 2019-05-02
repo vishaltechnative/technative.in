@@ -215,12 +215,12 @@ $(document).on('ready', function () {
 						messageServerUrl = sendMessageForm.attr('action');
 					}
 
-					sendEmailForm.initForm({
-						serverUrl: newsletterServerUrl,
-					});
-					sendMessageForm.initForm({
-						serverUrl: messageServerUrl,
-					});
+					// sendEmailForm.initForm({
+					// 	serverUrl: newsletterServerUrl,
+					// });
+					// sendMessageForm.initForm({
+					// 	serverUrl: messageServerUrl,
+					// });
 
 				},
 				afterResize: function () {
